@@ -1,0 +1,20 @@
+{% extends '_layout1.html' %}
+
+
+{% block head_title %}
+    Minhas Enquetes
+{% endblock %}
+
+{% block content %}
+    <h1> Enquetes </h1>
+    <a href="{% url 'poll_add' %}" class="btn btn-lg btn-primary font-weight-bold mb-5">Nova Pergunta
+    </a>
+    {% for question in all_questions %}
+        <article>
+            <p>{{ question.pub_date|date:"d/m/Y" }} | {{ question.question_text }}
+            |   <a href="{% url 'quest_upd' pk=question.id %}" class="link-secondary">Editar
+                </a>
+            </p>
+        </article>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{# Curso Django Framework do Zero: https://www.youtube.com/playlist?list=PLFOqHo8oIjzewcT23HCxJV0xWO451CTJe #}
+{% extends '_layout1.html' %} {# herda tudo que já tem em _layout1.html #}
+
+{% block head_title %}
+    Minhas Enquetes Nova
+{% endblock %}
+
+{% block content %}        {# substitui  o bloco content em _layout1.html #}
+    <a href="{% url 'poll_add' %}" class="btn btn-lg btn-primary font-weight-bold mb-5">Nova Pergunta
+    </a>
+    <h1>{{ titulo }}</h1> {# variável a ser substituída #}
+{% endblock %} {# fecha o bloco content #}

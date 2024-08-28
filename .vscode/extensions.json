@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "batisteo.vscode-django",
+        "bigonesystems.django",
+        "bibhasdn.django-html",
+        "ms-azuretools.vscode-docker",
+        "necinc.elmmet",
+        "ms-python.python"
+    ]
+}
